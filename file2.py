@@ -19,6 +19,11 @@ def calculate_average():
     if grades:
         average = sum(grades) / len(grades)
         print(f"Średnia ocen to: {average:.2f}")
+        
+        if average > 2.5:
+            print("Gratulacje, zdałeś/zdałaś!")
+        else:
+            print("Niestety, nie zdałeś/nie zdałaś.")
     else:
         print("Nie wprowadzono żadnych ocen.")
 
